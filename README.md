@@ -396,7 +396,7 @@ python main.py --quiet --no-menu
 The CRAG control loop follows the Self-Corrective RAG formulation (Yan et al., 2024);
 implementation choices, degradation protocols, ingestion pipeline, and hardening are
 this project's own engineering.
-````
+
 
 ## Notes
 
