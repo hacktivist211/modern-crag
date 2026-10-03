@@ -179,7 +179,7 @@ def run_crag_pipeline(query, engine, top_k=TOP_K, ef=None, verbose=True):
             context_blocks.append({"source": "system notice", "text": notice})
 
     log(f"generating answer from {len(context_blocks)} context block(s)")
-    print("\nNova: ", end="", flush=True)
+    print("\nIRIS: ", end="", flush=True)
     for token in generate_answer(query, context_blocks):
         sys.stdout.write(token)
         sys.stdout.flush()
@@ -258,13 +258,13 @@ def main():
             print()
             query = input("You: ").strip()
         except (EOFError, KeyboardInterrupt):
-            print("\nNova: goodbye.")
+            print("\nIRIS: goodbye.")
             break
         if not query:
             continue
         lowered = query.lower()
         if lowered in {"exit", "quit", "/exit", "/quit", "bye"}:
-            print("Nova: goodbye.")
+            print("IRIS: goodbye.")
             break
         if lowered == "/menu":
             _choose_ingestion(engine)
@@ -280,7 +280,7 @@ def main():
             print("\n[crag] interrupted")
         except Exception as error:
             print(f"\n[crag] pipeline error: {error}")
-            print("Nova: something went wrong while processing that question. Please try rephrasing it.")
+            print("IRIS: something went wrong while processing that question. Please try rephrasing it.")
 
 
 if __name__ == "__main__":
