@@ -1,0 +1,17 @@
+--extra-index-url https://download.pytorch.org/whl/cu124
+torch==2.6.0+cu124
+numpy>=1.26.4,<2.0
+sentence-transformers>=3.3,<6
+transformers>=4.44,<5
+langchain>=0.3.14,<0.4
+langchain-core>=0.3.29,<0.4
+langchain-community>=0.3,<0.4
+langchain-text-splitters>=0.3,<0.4
+langchain-chroma>=0.2,<0.3
+langchain-ollama>=0.2,<0.4
+chromadb>=0.5.18,<0.6
+posthog>=2.4,<3
+pymupdf>=1.24,<2
+duckduckgo-search>=6.3,<7
+rich>=13.7,<15
+chardet>=5.2,<6
