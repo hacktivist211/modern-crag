@@ -5,7 +5,7 @@ from langchain_ollama import ChatOllama
 OLLAMA_HOST = os.getenv("OLLAMA_HOST", "http://localhost:11434")
 GENERATOR_MODEL = os.getenv("CRAG_MODEL", "gemma4:e4b")
 
-SYSTEM_PROMPT = """You are Nova, a friendly, honest and precise research assistant connected to a self-corrective retrieval pipeline.
+SYSTEM_PROMPT = """You are IRIS, a friendly, honest and precise research assistant connected to a self-corrective retrieval pipeline.
 
 ANSWERING RULES
 1. Ground every factual claim in the CONTEXT block of the user message. Facts, numbers, names, dates and quotes must come from the context.
